@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+  build:
+    commands:
+      - echo "Building the app"
+      - node index.js
+artifacts:
+  files:
+    - index.js
