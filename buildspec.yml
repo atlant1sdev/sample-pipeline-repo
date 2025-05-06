@@ -6,8 +6,10 @@ phases:
       nodejs: 14
   build:
     commands:
-      - echo "Building the app"
-      - node index.js
+      - echo "== Current working directory contents =="
+      - ls -al
+      - echo "== Checking if index.js exists =="
+      - cat index.js || echo "index.js not found"
 artifacts:
   files:
     - index.js
